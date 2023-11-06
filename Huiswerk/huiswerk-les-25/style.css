@@ -1,0 +1,30 @@
+body {
+  background-color: blanchedalmond;
+}
+
+.ui-state-active {
+  background-color: green;
+}
+
+input {
+  margin-right: 20px;
+}
+
+input[type='number'] {
+  width: 80px;
+}
+
+input[type='radio'] {
+  margin-right: 5px;
+}
+
+button {
+  background-color: green;
+  color: white;
+
+  padding: 6px;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+

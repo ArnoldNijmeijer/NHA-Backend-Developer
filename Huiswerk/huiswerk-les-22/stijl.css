@@ -1,0 +1,45 @@
+footer {
+  min-height: 200px;
+  background-color: beige;
+  text-align: center;
+}
+
+.nav-link:hover {
+  /* overscrhijving bootstrap */
+  background-color: chocolate;
+  border-radius: 5px;
+}
+
+.active {
+  font-weight: bold;
+}
+
+main {
+  background-color: bisque;
+}
+
+h1,
+p,
+form {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  min-height: 100%;
+}
+.matrix {
+  text-align: center;
+  justify-content: center;
+}
+
+.matrix div {
+  background-color: burlywood;
+  height: 45px;
+  width: 45px;
+  border: 1px solid black;
+}
+
+label {
+  vertical-align: top;
+}

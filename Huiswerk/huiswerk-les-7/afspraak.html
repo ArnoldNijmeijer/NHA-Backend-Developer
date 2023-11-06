@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Tandartspraktijk KiesKeurig</title>
+  </head>
+  <body>
+    <h1>Tandartsafspraak</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+      blanditiis tempore dolorem accusantium debitis. Quisquam dolore voluptate
+      eos eius, porro nobis. Facilis ipsum id quis enim ut earum dolorum labore!
+    </p>
+    <br />
+    <img
+      src="afbeeldingen/toothbrush-3191097_1280.jpg"
+      alt="foto van tandenborstels"
+      width="300"
+    />
+    <img
+      src="afbeeldingen/Tandartspraktijk.jpg"
+      alt="foto van tandartspraktijk"
+      width="300"
+    />
+    <img
+      src="afbeeldingen/Tandarts-afspraak.jpg"
+      alt="foto van tandarts"
+      width="300"
+    />
+    <br /><br />
+    <form action="https://formspree.io/f/xnqykngw" method="POST">
+      <fieldset>
+        <legend>Persoonlijke gegevens</legend>
+        <br />
+        <input type="radio" name="geslacht" value="man" checked />Man
+        <input type="radio" name="geslacht" value="vrouw" />Vrouw
+        <input type="radio" name="geslacht" value="anders" />Anders
+        <table>
+          <tr>
+            <td width="100">
+              <label for="naam">Naam:</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                name="naam"
+                id="naam"
+                placeholder="Uw voor- en achternaam"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="adres">Adres:</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                name="adres"
+                id="adres"
+                placeholder="Uw straatnaam en huisnr."
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="plaats">Woonplaats:</label>
+            </td>
+            <td>
+              <input type="text" name="plaats" id="plaats" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="postcode">Postcode:</label>
+            </td>
+            <td>
+              <input type="text" name="postcode" id="postcode" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="email">Email:</label>
+            </td>
+            <td><input type="email" name="emailadres" /></td>
+          </tr>
+        </table>
+        <br />
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Beschrijving van de klachten</legend>
+        <br />
+
+        <input type="checkbox" name="klachten" value="kiespijn" />Kiespijn
+
+        <input type="checkbox" name="klachten" value="gaatjes" />Gaatjes
+
+        <input type="checkbox" name="klachten" value="ontsteking" />Ontsteking
+
+        <input type="checkbox" name="klachten" value="overige" />Overige
+        <br /><br />
+        <label for="foto">Upload uw foto van uw gebit</label>
+
+        <input type="file" name="foto" id="foto" /><br />
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Toelichting van de klachten</legend>
+        <br />
+        <textarea
+          name="toelichting"
+          maxlength="1500"
+          rows="5"
+          cols="50"
+          placeholder="beschrijving van de klachten"
+        ></textarea>
+        <br /><br />
+        <label for="datum">Kies een Datum</label>
+        <input type="date" name="datum" id="datum" />
+      </fieldset>
+      <br />
+      <input type="submit" value="Verzend" />
+    </form>
+  </body>
+</html>

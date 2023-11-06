@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css"
+    />
+    <script type="text/javascript">
+      $(function () {
+        $('#accordion').accordion();
+      });
+    </script>
+    <script src="app.js" defer type="text/Javascript"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Huiswerk les 25</title>
+  </head>
+  <body>
+    <h2>Persoons Gegevens</h2>
+    <div id="accordion">
+      <h3>Invoer Naam</h3>
+      <div>
+        <label for="voornaam">Voornaam </label>
+        <input type="text" name="voornaam" id="voornaam" />
+        <label for="achternaam"> Achternaam</label>
+        <input type="text" name="achternaam" id="achternaam" />
+      </div>
+      <h3>Invoer Adres</h3>
+      <div>
+        <label for="straat">Straat</label>
+        <input type="text" name="straat" id="straat" />
+        <label for="woonplaats">Woonplaats</label>
+        <input type="text" name="woonplaats" id="woonplaats" />
+      </div>
+      <h3>Invoer Leeftijd / Geslacht</h3>
+      <div>
+        <label for="leeftijd">Leeftijd</label>
+        <input type="number" name="leeftijd" id="leeftijd" />
+        <input type="radio" name="geslacht" value="man" checked />Man
+        <input type="radio" name="geslacht" value="vrouw" />Vrouw
+      </div>
+    </div>
+
+    <h3>Gegevens:</h3>
+    <button>Ophalen</button>
+    <p>Naam: <span id="invoer-naam"></span></p>
+    <p>Adres: <span id="invoer-adres"></span></p>
+    <p>Leeftijd: <span id="invoer-leeftijd"></span></p>
+    <p>Geslacht: <span id="invoer-geslacht"></span></p>
+    <noscript>
+      Om deze website optimaal te gebruiken is het noodzakelijk om JavaScript te
+      activeren.
+    </noscript>
+  </body>
+</html>
